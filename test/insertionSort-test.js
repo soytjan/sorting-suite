@@ -138,15 +138,4 @@ describe('insertionSort', function() {
     expect(isSorted(array)).to.equal(true);
   });
 
-  it('expects to sort an array of 16000', function() {
-    let array = genRandNums(16000, 100);
-
-    expect(array.length).to.equal(16000);
-    expect(isSorted(array)).to.equal(false);
-
-    insertionSort(array);
-
-    expect(isSorted(array)).to.equal(true);
-  });
-
 })
